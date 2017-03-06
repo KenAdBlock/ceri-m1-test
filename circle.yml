@@ -2,7 +2,7 @@
 machine:
 
   timezone:
-    Europe/France # Set the timezone
+    Europe/Paris # Set the timezone
 
 ## Customize checkout
 checkout:
