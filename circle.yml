@@ -10,7 +10,11 @@ machine:
 test:
   override:
     - echo 'no tests, just say us Okay!'
+    - mvn clean
+    - mvn validate
+    - mvn compile
     - mvn test
+    - mvn verify
 
 general:
   branches:
