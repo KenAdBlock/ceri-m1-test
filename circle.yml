@@ -4,6 +4,9 @@ machine:
   timezone:
     Europe/Paris # Set the timezone
 
+  java:
+    version: openjdk8
+
 ## Customize checkout
 checkout:
   post:
@@ -16,13 +19,6 @@ dependencies:
     - npm install coffeescript # install from a different package manager
 #    - gem uninstall bundler # use a custom version of bundler
     - gem install bundler --pre
-
-## Customize database setup
-database:
-  override:
-    # replace CircleCI's generated database.yml
-    - cp config/database.yml.ci config/database.yml
-    - bundle exec rake db:create db:schema:load
 
 ## Customize test commands
 #test:
