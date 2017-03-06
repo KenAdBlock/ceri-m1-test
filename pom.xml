@@ -5,7 +5,7 @@
     <groupId>fr.univavignon</groupId>
     <artifactId>demo-maven</artifactId>
     <version>1.0</version>
-    <name>GO Test</name>
+    <name>demo-maven</name>
     <description>First maven project</description>
     <url>https://github.com/johnlejardinnier/ceri-m1-test</url>
     <licenses>

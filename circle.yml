@@ -1,0 +1,23 @@
+## Customize the test machine
+machine:
+
+  timezone:
+    Europe/Paris # Set the timezone
+
+
+  machine:
+    java:
+      version: oraclejdk8
+
+
+  # Override /etc/hosts
+  #hosts:
+  #  circlehost: 127.0.0.1
+  #  dev.mycompany.com: 127.0.0.1
+
+## Customize deployment commands
+deployment:
+  staging:
+    branch: master
+    #heroku:
+    #  appname: demo-maven
