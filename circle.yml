@@ -5,21 +5,22 @@ machine:
     Europe/Paris # Set the timezone
 
 
-  machine:
     java:
       version: oraclejdk8
 
+    test:
+      override:
+        - echo 'no tests, just say us Okay!'
+        - mvn verify pom.xml
 
-  # Override /etc/hosts
-  #hosts:
-  #  circlehost: 127.0.0.1
-  #  dev.mycompany.com: 127.0.0.1
+    general:
+      branches:
+        only:
+          - master
 
 ## Customize deployment commands
-deployment:
-  staging:
-    branch: master
-    commands:
-      - git push git@github.com:johnlejardinnier/ceri-m1-test.git
-    #heroku:
-    #  appname: demo-maven
+#deployment:
+#  staging:
+#    branch: master
+#    commands:
+#      - git push git@github.com:johnlejardinnier/ceri-m1-test.git
