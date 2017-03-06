@@ -7,27 +7,14 @@ machine:
   java:
     version: openjdk8
 
-## Customize checkout
-checkout:
-  post:
-    - git submodule sync
-    - git submodule update --init # use submodules
-
-## Customize dependencies
-dependencies:
-  pre:
-#    - npm install coffeescript # install from a different package manager
-#    - gem uninstall bundler # use a custom version of bundler
-#    - gem install bundler --pre
-
-## Customize test commands
-#test:
-#  override:
-#    - phpunit test/unit-tests # use PHPunit for testing
+test:
+#  - mvn clean
+#  - mvn validate
+#  - mvn compile
+  - mvn test
 
 ## Customize deployment commands
-deployment:
-  staging:
-    branch: master
-    heroku:
-      appname: ceri-m1-test
+general:
+  branches:
+    only:
+      branch: master
