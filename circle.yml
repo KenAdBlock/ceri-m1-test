@@ -8,13 +8,14 @@ machine:
     version: openjdk8
 
 test:
-#  - mvn clean
-#  - mvn validate
-#  - mvn compile
-  - mvn test
+  override:
+#     - mvn clean
+#    - mvn validate
+#    - mvn compile
+    - mvn test
 
 ## Customize deployment commands
 general:
   branches:
     only:
-      branch: master
+      - master
