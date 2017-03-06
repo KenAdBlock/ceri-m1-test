@@ -16,9 +16,9 @@ checkout:
 ## Customize dependencies
 dependencies:
   pre:
-    - npm install coffeescript # install from a different package manager
+#    - npm install coffeescript # install from a different package manager
 #    - gem uninstall bundler # use a custom version of bundler
-    - gem install bundler --pre
+#    - gem install bundler --pre
 
 ## Customize test commands
 #test:
@@ -30,4 +30,4 @@ deployment:
   staging:
     branch: master
     heroku:
-      appname: foo-bar-123
+      appname: ceri-m1-test
