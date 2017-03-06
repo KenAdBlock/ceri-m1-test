@@ -10,6 +10,10 @@ machine:
 #    dev.mycompany.com: 127.0.0.1
 
 ## Customize test commands
+
+test:
+  post:
+    - npm run coverage
 #test:
 #  override:
 #    - phpunit test/unit-tests # use PHPunit for testing
