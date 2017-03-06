@@ -2,7 +2,7 @@
 machine:
 
     java:
-      version: oraclejdk8
+      version: openjdk8
 
     timezone:
       Europe/Paris # Set the timezone
