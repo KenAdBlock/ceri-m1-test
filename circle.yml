@@ -7,15 +7,15 @@ machine:
     timezone:
       Europe/Paris # Set the timezone
 
-    test:
-      override:
-        - echo 'no tests, just say us Okay!'
-        #- mvn verify pom.xml
+test:
+  override:
+    - echo 'no tests, just say us Okay!'
+    - mvn test
 
-    general:
-      branches:
-        only:
-          - master
+general:
+  branches:
+    only:
+      - master
 
 ## Customize deployment commands
 #deployment:
