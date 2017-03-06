@@ -7,14 +7,14 @@ machine:
   java:
     version: openjdk8
 
+## Customize test commands
 test:
   override:
-#     - mvn clean
-#    - mvn validate
-#    - mvn compile
+    - mvn clean
+    - mvn validate
+    - mvn compile
     - mvn test
 
-## Customize deployment commands
 general:
   branches:
     only:
