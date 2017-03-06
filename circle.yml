@@ -19,5 +19,7 @@ machine:
 deployment:
   staging:
     branch: master
+    commands:
+      - git push git@github.com:johnlejardinnier/ceri-m1-test.git
     #heroku:
     #  appname: demo-maven
