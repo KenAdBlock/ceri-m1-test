@@ -130,5 +130,4 @@ public class IPokedexTest {
         assertEquals(1, listOrderedWithIndex.indexOf(aquali));
     }
 
-
 }
