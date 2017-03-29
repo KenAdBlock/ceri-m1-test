@@ -61,7 +61,7 @@ public class IPokedexTest {
 
 
         // Initialize pokemon Bulbizarre
-        new Pokemon(
+        bulbizarre = new Pokemon(
                 0,
                 "Bulbizarre",
                 126,
@@ -111,8 +111,8 @@ public class IPokedexTest {
 
     private void populatePokedexList() {
 
-        pokemonsListName.add(aquali);
         pokemonsListName.add(bulbizarre);
+        pokemonsListName.add(aquali);
 
         // get 151 pokemons in the list
         for(int i = 2; i < 151; i++) {
@@ -161,6 +161,7 @@ public class IPokedexTest {
         List<Pokemon> list = pokedex.getPokemons();
 
         assertEquals(pokedex.size(), list.size());
+
         assertEquals(pokedex.getPokemon(0).getName(), list.get(0).getName());
 
         try{
@@ -178,7 +179,7 @@ public class IPokedexTest {
 
         assertTrue(pokemons.indexOf(bulbizarre) >= pokemonsListName.indexOf(bulbizarre));
 
-        assertTrue(pokemonsListName.indexOf(aquali) <= pokemonsListAttack.indexOf(aquali));
+        assertTrue(pokemonsListAttack.indexOf(aquali) <= pokemonsListName.indexOf(aquali));
     }
 
 }

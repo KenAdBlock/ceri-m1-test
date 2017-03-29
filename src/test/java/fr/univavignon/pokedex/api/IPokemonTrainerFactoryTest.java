@@ -47,7 +47,7 @@ public class IPokemonTrainerFactoryTest {
         assertEquals(Team.VALOR, trainer.getTeam());
 
         assertNotNull(trainer.getPokedex());
-        
+
         assertEquals(151, trainer.getPokedex().size());
     }
 
