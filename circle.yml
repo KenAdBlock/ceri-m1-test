@@ -9,13 +9,16 @@ machine:
 
 ## Customize test commands
 test:
+
   override:
     - mvn clean
     - mvn validate
     - mvn compile
     - mvn test
 
+## Customize test branchs
 general:
+
   branches:
     only:
       - master
