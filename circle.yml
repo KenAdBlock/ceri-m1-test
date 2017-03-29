@@ -9,7 +9,7 @@ machine:
 
 test:
   override:
-    - echo 'no tests, just say us Okay!'
+    - echo 'Maven full test'
     - mvn clean
     - mvn validate
     - mvn compile
