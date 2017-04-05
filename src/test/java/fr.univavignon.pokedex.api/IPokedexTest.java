@@ -25,7 +25,7 @@ public class IPokedexTest {
     public MockitoRule mockitoRule = MockitoJUnit.rule();
 
     @Mock
-    protected static IPokedex pokedex;
+    private static IPokedex pokedex;
 
     private static Pokemon bulbizarre = new Pokemon(
             0,
@@ -59,22 +59,23 @@ public class IPokedexTest {
     public void setUp() throws PokedexException {
         MockitoAnnotations.initMocks(this);
         pokedexSize[0] = 0;
-        List<Pokemon> list1 = new ArrayList<>(), list2 = new ArrayList<>();
+        List<Pokemon> listPokemon1 = new ArrayList<>();
+        List<Pokemon> listPokemon2 = new ArrayList<>();
 
         when(pokedex.size()).thenAnswer(i -> pokedexSize[0]);
         when(pokedex.addPokemon(any())).then(i -> pokedexSize[0]++);
         when(pokedex.getPokemon(0)).thenReturn(bulbizarre);
         when(pokedex.getPokemon(1)).thenThrow(new PokedexException("Invalid index"));
 
-        list1.add(bulbizarre);
-        list1.add(aquali);
+        listPokemon1.add(bulbizarre);
+        listPokemon1.add(aquali);
 
-        when(pokedex.getPokemons()).thenReturn(Collections.unmodifiableList(list1));
+        when(pokedex.getPokemons()).thenReturn(Collections.unmodifiableList(listPokemon1));
 
-        list2.add(aquali);
-        list2.add(bulbizarre);
+        listPokemon2.add(aquali);
+        listPokemon2.add(bulbizarre);
 
-        when(pokedex.getPokemons(any())).thenReturn(Collections.unmodifiableList(list2)).thenReturn(Collections.unmodifiableList(list1));
+        when(pokedex.getPokemons(any())).thenReturn(Collections.unmodifiableList(listPokemon2)).thenReturn(Collections.unmodifiableList(listPokemon1));
     }
 
     @Test
