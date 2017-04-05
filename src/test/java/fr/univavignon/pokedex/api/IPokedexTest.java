@@ -168,7 +168,7 @@ public class IPokedexTest {
             list.add(bulbizarre);
             fail("Expected UnsupportedOperationException to be thrown");
         } catch (UnsupportedOperationException e) {
-            assertTrue(true);
+            e.getMessage();
         }
     }
 
