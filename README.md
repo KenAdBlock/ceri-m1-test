@@ -8,5 +8,7 @@
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/ece45fb7637146bfa7bac81ce627aae1)](https://www.codacy.com/app/KenAdBlock/ceri-m1-test?utm_source=github.com&utm_medium=referral&utm_content=KenAdBlock/ceri-m1-test&utm_campaign=Badge_Coverage)
 
+-----
+
 ### Kenny Coadalen
 ### Alternant
