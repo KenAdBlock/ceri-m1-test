@@ -16,19 +16,17 @@ test:
     - mvn test
     - mvn verify
 
+  post:
+    - export CODACY_PROJECT_TOKEN=0bbdabaadfc04e34b472d7e56f3bbf9e
+    - mvn jacoco:report
+    - codacy-coverage-reporter -l Java -r coverage.xml
+
+
 general:
   branches:
     only:
       - master
 
-dependencies:
-  post:
-        - curl -sL https://github.com/jpm4j/jpm4j.installers/raw/master/dist/biz.aQute.jpm.run.jar >t.jar
-        - java -jar t.jar init
-        - rm t.jar
-        - jpm install com.codacy:codacy-coverage-reporter:assembly
-        - export CODACY_PROJECT_TOKEN=0bbdabaadfc04e34b472d7e56f3bbf9e
-        - codacy-coverage-reporter -l Java -r coverage.xml
 
 ## Customize deployment commands
 #deployment:
