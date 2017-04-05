@@ -21,6 +21,13 @@ general:
     only:
       - master
 
+dependencies:
+  post:
+        - curl https://www.jpm4j.org/install/script
+        - jpm install com.codacy:codacy-coverage-reporter:assembly
+        - export CODACY_PROJECT_TOKEN=0bbdabaadfc04e34b472d7e56f3bbf9e
+        - codacy-coverage-reporter -l Java -r coverage.xml
+
 ## Customize deployment commands
 #deployment:
 #  staging:
