@@ -12,9 +12,9 @@ machine:
 test:
 
   override:
-    - mvn clean
-    - mvn validate
-    - mvn compile
+#    - mvn clean
+#    - mvn validate
+#    - mvn compile
     - mvn test
 
   post:
