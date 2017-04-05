@@ -52,17 +52,17 @@
     <build>
         <resources>
             <resource>
-                <directory>C:\Users\Kenny\Documents\workspace\ceri-m1-test\src\main\resources</directory>
+                <directory>src\main\resources</directory>
             </resource>
         </resources>
 
         <testResources>
             <testResource>
-                <directory>C:\Users\Kenny\Documents\workspace\ceri-m1-test\src\test\resources</directory>
+                <directory>src\test\resources</directory>
             </testResource>
         </testResources>
 
-        <directory>C:\Users\Kenny\Documents\workspace\ceri-m1-test\target</directory>
+        <directory>target</directory>
         <finalName>TechniquesDeTests-1.0.0</finalName>
 
         <pluginManagement>
@@ -99,6 +99,6 @@
     </build>
 
     <reporting>
-        <outputDirectory>C:\Users\Kenny\Documents\workspace\ceri-m1-test\target\site</outputDirectory>
+        <outputDirectory>target\site</outputDirectory>
     </reporting>
 </project>
