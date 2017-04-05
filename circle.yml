@@ -15,11 +15,9 @@ test:
     - mvn compile
     - mvn test
     - mvn verify
-    - mvn jacoco:report
-    
   post:
-    - mvn com.gavinmogan:codacy-maven-plugin:coverage -DcoverageReportFile=target/report/jacoco/jacoco.xml -DprojectToken=${CODACY_PROJECT_TOKEN} -DapiToken=${CODACY_API_TOKEN}
-    - tac target/report/jacoco/jacoco.xml
+    - mvn jacoco:report
+    - mvn com.gavinmogan:codacy-maven-plugin:coverage -DcoverageReportFile=target/site/jacoco/jacoco.xml -DprojectToken=$CODACY_PROJECT_TOKEN -DapiToken=$CODACY_API_TOKEN
 
 general:
   branches:
