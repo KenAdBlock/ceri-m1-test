@@ -18,7 +18,7 @@ public class IPokemonFactoryTest {
     public MockitoRule mockitoRule = MockitoJUnit.rule();
 
     @Mock
-    protected static IPokemonFactory pokemonFactory;
+    private static IPokemonFactory pokemonFactory;
 
     @Before
     public void setUp() throws PokedexException {

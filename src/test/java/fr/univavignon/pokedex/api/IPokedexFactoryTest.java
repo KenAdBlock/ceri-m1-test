@@ -18,13 +18,13 @@ public class IPokedexFactoryTest {
     public MockitoRule mockitoRule = MockitoJUnit.rule();
 
     @Mock
-    protected static IPokedexFactory pokedexFactory;
+    private static IPokedexFactory pokedexFactory;
 
     @Mock
-    protected static IPokemonMetadataProvider pokemonMetadataProvider;
+    private static IPokemonMetadataProvider pokemonMetadataProvider;
 
     @Mock
-    protected static IPokemonFactory pokemonFactory;
+    private static IPokemonFactory pokemonFactory;
 
     @Before
     public void setUp() {

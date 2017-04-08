@@ -1,16 +1,14 @@
 package fr.univavignon.pokedex.api;
 
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 import static junit.framework.TestCase.assertEquals;
 import org.mockito.junit.MockitoJUnit;
@@ -99,6 +97,7 @@ public class IPokedexTest {
         compareName = Comparator.comparing(PokemonMetadata::getName);
         compareAttack = Comparator.comparing(PokemonMetadata::getAttack);
 
+        when(pokedex.getPokemons(PokemonComparators.INDEX)).thenAnswer(a -> Arrays.asList(new Pokemon[] {bulbizarre}));
 
         // set pokemon list Name
         when(pokedex.getPokemons(compareName)).thenReturn(Collections.unmodifiableList(pokemonsListName));
@@ -175,11 +174,13 @@ public class IPokedexTest {
     @Test
     public void testGetPokemonsWithOrder() throws PokedexException {
 
-        List<Pokemon> pokemons = pokedex.getPokemons();
+        Assert.assertEquals("Bulbizarre", pokedex.getPokemons(PokemonComparators.INDEX).get(0).getName());
 
-        assertTrue(pokemons.indexOf(bulbizarre) >= pokemonsListName.indexOf(bulbizarre));
+        Assert.assertEquals(pokemonsListName, pokedex.getPokemons(compareName));
 
-        assertTrue(pokemonsListAttack.indexOf(aquali) <= pokemonsListName.indexOf(aquali));
+        Assert.assertEquals(pokemonsListAttack, pokedex.getPokemons(compareAttack));
+
+
     }
 
 }
