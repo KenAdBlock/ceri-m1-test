@@ -25,18 +25,14 @@ public class PokedexTest {
 
     private static Pokedex pokedex;
 
-    private PokemonMetadataProvider pokemonMetadataProvider;
-
-    private PokemonFactory pokemonFactory;
-
     private Pokemon pokemon;
 
 
     @Before
     public void setUp() {
 
-        pokemonMetadataProvider = new PokemonMetadataProvider();
-        pokemonFactory = new PokemonFactory();
+        PokemonMetadataProvider pokemonMetadataProvider = new PokemonMetadataProvider();
+        PokemonFactory pokemonFactory = new PokemonFactory();
         pokedex = new Pokedex(pokemonMetadataProvider, pokemonFactory);
 
         pokemon = pokemonFactory.createPokemon(42, 123, 97, 1000, 41);
@@ -76,7 +72,7 @@ public class PokedexTest {
 
 
     @Test
-    public void testGetPokemons() throws PokedexException {
+    public void testGetPokemons() {
 
         pokedex.addPokemon(pokemon);
 
@@ -84,7 +80,11 @@ public class PokedexTest {
 
         TestCase.assertEquals(pokedex.size(), list.size());
 
-        TestCase.assertEquals(pokedex.getPokemon(0).getName(), list.get(0).getName());
+        try {
+            TestCase.assertEquals(pokedex.getPokemon(0).getName(), list.get(0).getName());
+        } catch (PokedexException e) {
+            e.printStackTrace();
+        }
 
     }
 

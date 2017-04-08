@@ -36,7 +36,7 @@ public class PokemonMetadataProvider implements IPokemonMetadataProvider {
 
             String content = this.curl(link);
 
-            metadata = this.Json2PokemonMetadata(content);
+            metadata = this.json2PokemonMetadata(content);
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -90,7 +90,7 @@ public class PokemonMetadataProvider implements IPokemonMetadataProvider {
      * @param content
      * @return pokemonMetadata
      */
-    private PokemonMetadata Json2PokemonMetadata(String content) {
+    private PokemonMetadata json2PokemonMetadata(String content) {
 
         Gson g = new Gson();
 

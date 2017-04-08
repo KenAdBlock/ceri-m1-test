@@ -32,9 +32,14 @@ public class PokemonMetadataProviderTest {
     }
 
     @Test
-    public void testGetPokemonMetadata() throws PokedexException {
+    public void testGetPokemonMetadata() {
 
-        PokemonMetadata metadata = pokemonMetadataProvider.getPokemonMetadata(42);
+        PokemonMetadata metadata = null;
+        try {
+            metadata = pokemonMetadataProvider.getPokemonMetadata(42);
+        } catch (PokedexException e) {
+            e.printStackTrace();
+        }
 
         assertEquals(42, metadata.getIndex());
     }
