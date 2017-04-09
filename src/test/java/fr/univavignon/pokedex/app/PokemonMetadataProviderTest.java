@@ -1,6 +1,5 @@
 package fr.univavignon.pokedex.app;
 
-import fr.univavignon.pokedex.api.IPokedex;
 import fr.univavignon.pokedex.api.PokedexException;
 import fr.univavignon.pokedex.api.PokemonMetadata;
 import org.junit.Before;
@@ -10,7 +9,6 @@ import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 
 /**
  * Created by jonathan on 07/04/17.

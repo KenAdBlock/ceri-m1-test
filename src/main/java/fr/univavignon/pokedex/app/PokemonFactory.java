@@ -21,7 +21,7 @@ public class PokemonFactory implements IPokemonFactory {
 
             PokemonMetadata metadata = metadataProvider.getPokemonMetadata(index);
 
-            double iv = metadataProvider.calcIv();
+            double iv = this.computeIV();
 
             pokemon = new Pokemon(
                     index,
@@ -41,9 +41,22 @@ public class PokemonFactory implements IPokemonFactory {
         }
 
 
-
-
         return pokemon;
+    }
+
+
+    /**
+     * Compute the IV for a given pokemon
+     *
+     * @return double
+     */
+    private double computeIV() {
+
+        double iv = 0;
+
+        // Todo: calculate IV
+
+        return iv;
     }
 
 }
