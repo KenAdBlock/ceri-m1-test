@@ -1,19 +1,14 @@
 package fr.univavignon.pokedex.app;
 
 import fr.univavignon.pokedex.api.IPokedex;
-import fr.univavignon.pokedex.api.IPokedexFactory;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
 
 /**
  * Created by jonathan on 07/04/17.

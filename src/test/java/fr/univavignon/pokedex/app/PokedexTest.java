@@ -3,7 +3,6 @@ package fr.univavignon.pokedex.app;
 import fr.univavignon.pokedex.api.PokedexException;
 import fr.univavignon.pokedex.api.Pokemon;
 import fr.univavignon.pokedex.api.PokemonComparators;
-import junit.framework.TestCase;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -78,10 +77,10 @@ public class PokedexTest {
 
         List<Pokemon> list = pokedex.getPokemons();
 
-        TestCase.assertEquals(pokedex.size(), list.size());
+        assertEquals(pokedex.size(), list.size());
 
         try {
-            TestCase.assertEquals(pokedex.getPokemon(0).getName(), list.get(0).getName());
+            assertEquals(pokedex.getPokemon(0).getName(), list.get(0).getName());
         } catch (PokedexException e) {
             e.printStackTrace();
         }
@@ -89,7 +88,7 @@ public class PokedexTest {
     }
 
 
-    @Test  (expected=java.lang.UnsupportedOperationException.class)
+    @Test(expected = java.lang.UnsupportedOperationException.class)
     public void testGetPokemonsModify() {
 
         List<Pokemon> list = pokedex.getPokemons();

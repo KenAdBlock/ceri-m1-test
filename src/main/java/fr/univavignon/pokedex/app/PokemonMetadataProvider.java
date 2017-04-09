@@ -3,12 +3,10 @@ package fr.univavignon.pokedex.app;
 import com.google.gson.Gson;
 import fr.univavignon.pokedex.api.IPokemonMetadataProvider;
 import fr.univavignon.pokedex.api.PokedexException;
-import fr.univavignon.pokedex.api.Pokemon;
 import fr.univavignon.pokedex.api.PokemonMetadata;
 import fr.univavignon.pokedex.tools.IGSerializer;
 
 import java.io.*;
-import java.net.MalformedURLException;
 import java.net.URL;
 
 /**

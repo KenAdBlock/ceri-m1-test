@@ -7,14 +7,12 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.mockito.junit.MockitoJUnit;
+import org.mockito.junit.MockitoRule;
 
 import java.util.*;
 
 import static junit.framework.TestCase.assertEquals;
-import org.mockito.junit.MockitoJUnit;
-import org.mockito.junit.MockitoRule;
-
-import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 import static org.mockito.Mockito.when;
 
@@ -37,7 +35,6 @@ public class IPokedexTest {
     private static Pokemon aquali;
 
     private static Pokemon bulbizarre;
-
 
 
     @Before
@@ -97,7 +94,7 @@ public class IPokedexTest {
         compareName = Comparator.comparing(PokemonMetadata::getName);
         compareAttack = Comparator.comparing(PokemonMetadata::getAttack);
 
-        when(pokedex.getPokemons(PokemonComparators.INDEX)).thenAnswer(a -> Arrays.asList(new Pokemon[] {bulbizarre}));
+        when(pokedex.getPokemons(PokemonComparators.INDEX)).thenAnswer(a -> Arrays.asList(new Pokemon[]{bulbizarre}));
 
         // set pokemon list Name
         when(pokedex.getPokemons(compareName)).thenReturn(Collections.unmodifiableList(pokemonsListName));
@@ -114,7 +111,7 @@ public class IPokedexTest {
         pokemonsListName.add(aquali);
 
         // get 151 pokemons in the list
-        for(int i = 2; i < 151; i++) {
+        for (int i = 2; i < 151; i++) {
 
             Pokemon ghost = new Pokemon(
                     i,
@@ -150,7 +147,7 @@ public class IPokedexTest {
     }
 
 
-    @Test(expected=PokedexException.class)
+    @Test(expected = PokedexException.class)
     public void testGetPokemon() throws PokedexException {
         pokedex.getPokemon(160);
     }
@@ -163,7 +160,7 @@ public class IPokedexTest {
 
         assertEquals(pokedex.getPokemon(0).getName(), list.get(0).getName());
 
-        try{
+        try {
             list.add(bulbizarre);
             fail("Expected UnsupportedOperationException to be thrown");
         } catch (UnsupportedOperationException e) {

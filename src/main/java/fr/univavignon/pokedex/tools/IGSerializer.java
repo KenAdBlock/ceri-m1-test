@@ -10,7 +10,7 @@ import java.io.IOException;
 
 /**
  * Gson Manager interface to save and load Data
- * 
+ *
  * @author jonathan
  */
 public interface IGSerializer {
@@ -23,24 +23,26 @@ public interface IGSerializer {
 
     /**
      * Create folders if doesn't exists
+     *
      * @param dirname
      */
     default void initPath(String dirname) {
         File recordsDir = new File(rootPath, dirname);
 
-        if (! recordsDir.exists()) {
+        if (!recordsDir.exists()) {
             recordsDir.mkdirs();
         }
     }
 
     /**
      * Return full path filename
+     *
      * @param path
      * @param name
      * @return String
      */
-    default String getFileName( String path, String name) {
-        return rootPath  + path + name.toLowerCase() + ".json";
+    default String getFileName(String path, String name) {
+        return rootPath + path + name.toLowerCase() + ".json";
     }
 
     /**
@@ -59,6 +61,7 @@ public interface IGSerializer {
 
     /**
      * Try to save Data into json file
+     *
      * @param object
      * @throws IOException
      * @throws PokedexException
@@ -68,6 +71,7 @@ public interface IGSerializer {
 
     /**
      * Try to load Data from json file
+     *
      * @param name
      * @throws FileNotFoundException
      */
@@ -76,6 +80,7 @@ public interface IGSerializer {
 
     /**
      * Convert Objet into json file
+     *
      * @param filename
      * @param object
      */
@@ -94,5 +99,5 @@ public interface IGSerializer {
         }
 
     }
-	
+
 }

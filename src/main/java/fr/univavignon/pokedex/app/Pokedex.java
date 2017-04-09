@@ -2,9 +2,10 @@ package fr.univavignon.pokedex.app;
 
 import fr.univavignon.pokedex.api.*;
 
-import java.util.*;
-
-import static java.util.Collections.sort;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 /**
  * Created by jonathan on 06/04/17.

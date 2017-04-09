@@ -2,22 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3970c878-e2a0-4d76-afa2-f7dd27f11cba" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokedex.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokedex.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokedexFactory.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokedexFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonFactory.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonMetadataProvider.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonMetadataProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonTrainerFactory.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonTrainerFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokedexException.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokedexException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Pokemon.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Pokemon.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonComparators.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonComparators.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonMetadata.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonMetadata.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonTrainer.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonTrainer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Team.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Team.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/Pokedex.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/Pokedex.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonMetadataProvider.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonMetadataProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonTrainerFactory.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonTrainerFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonTrainerFactoryTest.java" afterPath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonTrainerFactoryTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/tools/IGSerializer.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/tools/IGSerializer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokedexTest.java" afterPath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokedexTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokedexFactoryTest.java" afterPath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokedexFactoryTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokedexTest.java" afterPath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokedexTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokemonMetadataProviderTest.java" afterPath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokemonMetadataProviderTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokemonTrainerFactoryTest.java" afterPath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokemonTrainerFactoryTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,7 +25,32 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Pokedex.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/Pokedex.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1140">
+              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PokemonMetadataProvider.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonMetadataProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2380">
+              <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,6 +67,9 @@
     <replaceStrings>
       <replace />
     </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -77,13 +97,11 @@
         <option value="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokedexFactoryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonFactoryTest.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokedexTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/tools/IJSerializer.java" />
         <option value="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokemonMetadataProviderTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/tools/IGSerializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonTrainer.java" />
         <option value="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonTrainerFactoryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokemonTrainerFactoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokedexFactory.java" />
@@ -99,6 +117,8 @@
         <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/Pokedex.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonMetadataProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonTrainerFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokedexTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonTrainer.java" />
       </list>
     </option>
   </component>
@@ -131,8 +151,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="757" />
+    <option name="x" value="1365" />
+    <option name="y" value="-11" />
     <option name="width" value="1368" />
     <option name="height" value="780" />
   </component>
@@ -404,7 +424,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
@@ -1039,7 +1059,7 @@
       <workItem from="1491388875760" duration="17806000" />
       <workItem from="1491463343783" duration="16030000" />
       <workItem from="1491567940117" duration="4168000" />
-      <workItem from="1491583942694" duration="37282000" />
+      <workItem from="1491583942694" duration="38250000" />
     </task>
     <servers />
   </component>
@@ -1076,10 +1096,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101599000" />
+    <option name="totallyTimeSpent" value="102567000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="757" width="1368" height="780" extended-state="6" />
+    <frame x="1365" y="-11" width="1368" height="780" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1091,7 +1112,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13787879" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40557274" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40557274" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1285,30 +1306,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonTrainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="27" column="75" lean-forward="false" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokedexFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokedex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -1381,26 +1378,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/Pokedex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokedexFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonMetadataProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="119" column="52" lean-forward="false" selection-start-line="119" selection-start-column="52" selection-end-line="119" selection-end-column="52" />
           <folding />
         </state>
       </provider>
@@ -1479,14 +1460,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokedexTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokemonFactoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
@@ -1507,6 +1480,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokedex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokedexFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokedexTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="78" column="31" lean-forward="true" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonTrainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/Pokedex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonMetadataProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2380">
+          <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
