@@ -31,19 +31,19 @@ public class PokemonMetadataProvider implements IPokemonMetadataProvider, IGSeri
     @Override
     public PokemonMetadata getPokemonMetadata(int index) throws PokedexException {
 
-        if(index <= 0 || index > 150) {
+        if (index <= 0 || index > 150) {
             throw new PokedexException("Id is not valid !");
         }
 
-        String link =  API + index;
+        String link = API + index;
 
-        PokemonMetadata metadata  = null;
+        PokemonMetadata metadata = null;
 
         try {
 
-            if(checkFile(path, Integer.toString(index))) {
+            if (checkFile(path, Integer.toString(index))) {
                 System.out.println("Loading metadata: " + index);
-                metadata =  (PokemonMetadata) this.loadData(Integer.toString(index));
+                metadata = (PokemonMetadata) this.loadData(Integer.toString(index));
             } else {
                 System.out.println("Downloading metadata: " + index);
                 String content = this.curl(link);
@@ -62,6 +62,7 @@ public class PokemonMetadataProvider implements IPokemonMetadataProvider, IGSeri
 
     /**
      * Get metadata infos into json string from API
+     *
      * @param link
      * @return
      * @throws IOException
@@ -73,7 +74,7 @@ public class PokemonMetadataProvider implements IPokemonMetadataProvider, IGSeri
         String content = "";
 
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream(), "UTF-8"))) {
-            for (String line; (line = reader.readLine()) != null;) {
+            for (String line; (line = reader.readLine()) != null; ) {
                 content += line;
             }
         } catch (IOException e) {
@@ -87,6 +88,7 @@ public class PokemonMetadataProvider implements IPokemonMetadataProvider, IGSeri
 
     /**
      * Create PokemonMetadata from Json
+     *
      * @param content
      * @return pokemonMetadata
      */
@@ -104,11 +106,11 @@ public class PokemonMetadataProvider implements IPokemonMetadataProvider, IGSeri
 
         PokemonMetadata pokemonMetadata = (PokemonMetadata) object;
 
-        if(pokemonMetadata == null) {
+        if (pokemonMetadata == null) {
             throw new PokedexException("Couldn't save empty metadata !");
         }
 
-        if(path == null) {
+        if (path == null) {
             throw new PokedexException("Metadata path is not defined !");
         }
 
@@ -121,7 +123,7 @@ public class PokemonMetadataProvider implements IPokemonMetadataProvider, IGSeri
     @Override
     public Object loadData(String name) throws FileNotFoundException, PokedexException {
 
-        if(path == null) {
+        if (path == null) {
             throw new PokedexException("Metadata path is not defined !");
         }
 
@@ -135,7 +137,7 @@ public class PokemonMetadataProvider implements IPokemonMetadataProvider, IGSeri
 
             pokemonMetadata = gson.fromJson(reader, PokemonMetadata.class);
 
-            if(pokemonMetadata == null) {
+            if (pokemonMetadata == null) {
                 throw new PokedexException("Error loading Metadata !");
             }
 

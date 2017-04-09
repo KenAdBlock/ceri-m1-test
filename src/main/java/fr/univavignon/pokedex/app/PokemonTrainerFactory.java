@@ -1,11 +1,13 @@
 package fr.univavignon.pokedex.app;
 
 import com.google.gson.Gson;
-import com.google.gson.JsonElement;
 import fr.univavignon.pokedex.api.*;
 import fr.univavignon.pokedex.tools.IGSerializer;
 
-import java.io.*;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
 
 /**
  * Created by jonathan on 08/04/17.
@@ -27,13 +29,13 @@ public class PokemonTrainerFactory implements IPokemonTrainerFactory, IGSerializ
 
         PokemonFactory pokemonFactory = new PokemonFactory();
 
-        IPokedex pokedex = pokedexFactory.createPokedex(metadataProvider, pokemonFactory );
+        Pokedex pokedex = (Pokedex) pokedexFactory.createPokedex(metadataProvider, pokemonFactory);
 
         PokemonTrainer pokemonTrainer = null;
 
         try {
 
-            if(checkFile(path, name)) {
+            if (checkFile(path, name)) {
                 System.out.println("Loading " + name + "...");
                 pokemonTrainer = (PokemonTrainer) this.loadData(name);
             } else {
@@ -55,11 +57,11 @@ public class PokemonTrainerFactory implements IPokemonTrainerFactory, IGSerializ
 
         PokemonTrainer pokemonTrainer = (PokemonTrainer) object;
 
-        if(pokemonTrainer == null) {
+        if (pokemonTrainer == null) {
             throw new PokedexException("Couldn't save empty trainer !");
         }
 
-        if(path == null) {
+        if (path == null) {
             throw new PokedexException("Trainer path is not defined !");
         }
 
@@ -71,7 +73,7 @@ public class PokemonTrainerFactory implements IPokemonTrainerFactory, IGSerializ
     @Override
     public Object loadData(String name) throws FileNotFoundException, PokedexException {
 
-        if(path == null) {
+        if (path == null) {
             throw new PokedexException("Trainer path is not defined !");
         }
 
@@ -87,7 +89,7 @@ public class PokemonTrainerFactory implements IPokemonTrainerFactory, IGSerializ
 
             System.out.println("trainer: " + pokemonTrainer.getName());
 
-            if(pokemonTrainer == null) {
+            if (pokemonTrainer == null) {
                 throw new PokedexException("Error loading Trainer !");
             }
 

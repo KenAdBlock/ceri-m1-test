@@ -2,18 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3970c878-e2a0-4d76-afa2-f7dd27f11cba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonTrainerFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/tools/IGSerializerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokemonTrainer.class" afterPath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokemonTrainer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/app/Main.class" afterPath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/app/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/app/PokemonFactory.class" afterPath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/app/PokemonFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/app/PokemonMetadataProvider.class" afterPath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/app/PokemonMetadataProvider.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/app/PokemonMetadataProviderTest.class" afterPath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/app/PokemonMetadataProviderTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/app/PokemonTrainerFactoryTest.class" afterPath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/app/PokemonTrainerFactoryTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonFactory.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokedex.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokedex.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokedexFactory.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokedexFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonFactory.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonMetadataProvider.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonMetadataProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonTrainerFactory.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonTrainerFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokedexException.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokedexException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Pokemon.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Pokemon.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonComparators.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonComparators.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonMetadata.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonMetadata.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonTrainer.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonTrainer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Team.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Team.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/Pokedex.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/Pokedex.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonMetadataProvider.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonMetadataProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokemonMetadataProviderTest.java" afterPath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokemonMetadataProviderTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonTrainerFactory.java" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonTrainerFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonTrainerFactoryTest.java" afterPath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonTrainerFactoryTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokemonTrainerFactoryTest.java" afterPath="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokemonTrainerFactoryTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,40 +33,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PokemonTrainerFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonTrainerFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1740">
-              <caret line="87" column="69" lean-forward="false" selection-start-line="87" selection-start-column="69" selection-end-line="87" selection-end-column="69" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PokemonTrainer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonTrainer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PokemonTrainerFactoryTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokemonTrainerFactoryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -96,7 +67,6 @@
         <option value="$PROJECT_DIR$/src/test/java/fr.univavignon.pokedex.api/IPokedexFactoryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/fr.univavignon.pokedex.api/IPokemonTrainerFactoryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/fr.univavignon.pokedex.api/IPokedexTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonTrainerFactoryTest.java" />
         <option value="$PROJECT_DIR$/circle.yml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokedexFactory.java" />
@@ -106,7 +76,6 @@
         <option value="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokedexTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokedexFactoryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/Pokedex.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokedexTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/Main.java" />
@@ -114,10 +83,22 @@
         <option value="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokemonMetadataProviderTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/tools/IGSerializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonTrainer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonTrainerFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokemonTrainerFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokedexFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokedex.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonMetadataProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonTrainerFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokedexException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Pokemon.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonComparators.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonMetadata.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Team.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/Pokedex.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonMetadataProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonTrainerFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonTrainer.java" />
-        <option value="$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokemonTrainerFactoryTest.java" />
       </list>
     </option>
   </component>
@@ -423,7 +404,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
@@ -455,6 +436,58 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.PokemonTrainerFactoryTest">
+    <configuration default="false" name="PokedexFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="fr.univavignon.pokedex.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="demo-maven" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="fr.univavignon.pokedex.app" />
+      <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.app.PokedexFactoryTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="PokedexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="fr.univavignon.pokedex.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="demo-maven" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="fr.univavignon.pokedex.app" />
+      <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.app.PokedexTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="false" name="PokemonFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -519,58 +552,6 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="fr.univavignon.pokedex.app" />
       <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.app.PokemonTrainerFactoryTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="PokemonTrainerFactoryTest.testCreateTrainer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="fr.univavignon.pokedex.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="demo-maven" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="fr.univavignon.pokedex.app" />
-      <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.app.PokemonTrainerFactoryTest" />
-      <option name="METHOD_NAME" value="testCreateTrainer" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="IPokemonMetadataProviderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="fr.univavignon.pokedex.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="demo-maven" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="fr.univavignon.pokedex.api" />
-      <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.api.IPokemonMetadataProviderTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1022,19 +1003,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.PokemonFactoryTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PokemonMetadataProviderTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.PokemonTrainerFactoryTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.PokemonTrainerFactoryTest.testCreateTrainer" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.IPokemonMetadataProviderTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.PokedexFactoryTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.PokedexTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.PokemonFactoryTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.PokemonMetadataProviderTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.PokemonTrainerFactoryTest" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.PokemonTrainerFactoryTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.IPokemonMetadataProviderTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.PokemonMetadataProviderTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.PokemonTrainerFactoryTest.testCreateTrainer" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.PokemonFactoryTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.PokemonMetadataProviderTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.PokemonFactoryTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.PokedexTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.PokedexFactoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1058,72 +1039,71 @@
       <workItem from="1491388875760" duration="17806000" />
       <workItem from="1491463343783" duration="16030000" />
       <workItem from="1491567940117" duration="4168000" />
-      <workItem from="1491583942694" duration="35928000" />
+      <workItem from="1491583942694" duration="37282000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IPokemonMetadataProviderTest - 2017.04.09 at 17h 50m 04s.xml">
+    <history-entry file="IPokedexFactoryTest - 2017.04.09 at 18h 33m 59s.xml">
+      <configuration name="IPokedexFactoryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IPokedexTest - 2017.04.09 at 18h 34m 06s.xml">
+      <configuration name="IPokedexTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IPokemonFactoryTest - 2017.04.09 at 18h 34m 13s.xml">
+      <configuration name="IPokemonFactoryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IPokemonMetadataProviderTest - 2017.04.09 at 18h 34m 20s.xml">
       <configuration name="IPokemonMetadataProviderTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PokemonMetadataProviderTest - 2017.04.09 at 17h 49m 47s.xml">
+    <history-entry file="IPokemonTrainerFactoryTest - 2017.04.09 at 18h 34m 25s.xml">
+      <configuration name="IPokemonTrainerFactoryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PokedexFactoryTest - 2017.04.09 at 18h 34m 43s.xml">
+      <configuration name="PokedexFactoryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PokedexTest - 2017.04.09 at 18h 34m 50s.xml">
+      <configuration name="PokedexTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PokemonFactoryTest - 2017.04.09 at 18h 34m 56s.xml">
+      <configuration name="PokemonFactoryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PokemonMetadataProviderTest - 2017.04.09 at 18h 35m 02s.xml">
       <configuration name="PokemonMetadataProviderTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PokemonMetadataProviderTest - 2017.04.09 at 17h 49m 51s.xml">
-      <configuration name="PokemonMetadataProviderTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PokemonTrainerFactoryTest - 2017.04.09 at 17h 52m 58s.xml">
-      <configuration name="PokemonTrainerFactoryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PokemonTrainerFactoryTest - 2017.04.09 at 17h 53m 11s.xml">
-      <configuration name="PokemonTrainerFactoryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PokemonTrainerFactoryTest - 2017.04.09 at 17h 53m 36s.xml">
-      <configuration name="PokemonTrainerFactoryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PokemonTrainerFactoryTest - 2017.04.09 at 18h 02m 16s.xml">
-      <configuration name="PokemonTrainerFactoryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PokemonTrainerFactoryTest - 2017.04.09 at 18h 03m 16s.xml">
-      <configuration name="PokemonTrainerFactoryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PokemonTrainerFactoryTest - 2017.04.09 at 18h 03m 19s.xml">
-      <configuration name="PokemonTrainerFactoryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PokemonTrainerFactoryTest - 2017.04.09 at 18h 09m 31s.xml">
+    <history-entry file="PokemonTrainerFactoryTest - 2017.04.09 at 18h 35m 13s.xml">
       <configuration name="PokemonTrainerFactoryTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100245000" />
+    <option name="totallyTimeSpent" value="101599000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="757" width="1368" height="780" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13787879" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13787879" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40557274" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33560607" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1260,80 +1240,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokedexException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Team.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
           <caret line="83" column="21" lean-forward="true" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonMetadata.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-401">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Pokemon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="49" column="53" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonMetadataProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokedexFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokedexFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonComparators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -1349,10 +1259,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/Pokedex.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.0/gson-2.8.0-sources.jar!/com/google/gson/Gson.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="196">
+          <caret line="736" column="14" lean-forward="false" selection-start-line="736" selection-start-column="14" selection-end-line="736" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/tools/IGSerializerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/tools/IGSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="77" column="35" lean-forward="false" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonTrainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="27" column="75" lean-forward="false" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokedexFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokedex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonMetadataProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonTrainerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokedexException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Pokemon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="55" column="16" lean-forward="false" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonComparators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonMetadata.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/Team.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -1365,19 +1381,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.0/gson-2.8.0-sources.jar!/com/google/gson/Gson.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/Pokedex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="736" column="14" lean-forward="false" selection-start-line="736" selection-start-column="14" selection-end-line="736" selection-end-column="14" />
+        <state relative-caret-position="259">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokedexFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonMetadataProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="119" column="52" lean-forward="false" selection-start-line="119" selection-start-column="52" selection-end-line="119" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="296">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonTrainerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1391,61 +1433,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokedexTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1079">
-          <caret line="71" column="18" lean-forward="true" selection-start-line="62" selection-start-column="16" selection-end-line="71" selection-end-column="18" />
+        <state relative-caret-position="157">
+          <caret line="63" column="7" lean-forward="false" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonFactoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="20" column="11" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+        <state relative-caret-position="180">
+          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/MainTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonMetadataProviderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokedexFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokedexTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="34" column="8" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokemonFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+        <state relative-caret-position="177">
+          <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonTrainerFactoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="177">
+          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/tools/IGSerializerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
@@ -1453,81 +1471,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokemonTrainerFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokedexFactoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="157">
+          <caret line="35" column="11" lean-forward="false" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/IPokedex.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokedexTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="710">
-          <caret line="43" column="18" lean-forward="false" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+        <state relative-caret-position="157">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokemonFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokemonMetadataProviderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/api/IPokemonMetadataProviderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+        <state relative-caret-position="160">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/tools/IGSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="77" column="35" lean-forward="false" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonMetadataProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="117" column="52" lean-forward="false" selection-start-line="117" selection-start-column="52" selection-end-line="117" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/api/PokemonTrainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/pokedex/app/PokemonTrainerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1740">
-          <caret line="87" column="69" lean-forward="false" selection-start-line="87" selection-start-column="69" selection-end-line="87" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/pokedex/app/PokemonTrainerFactoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="159">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

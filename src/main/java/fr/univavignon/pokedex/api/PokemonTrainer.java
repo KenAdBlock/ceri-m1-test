@@ -1,5 +1,7 @@
 package fr.univavignon.pokedex.api;
 
+import fr.univavignon.pokedex.app.Pokedex;
+
 /**
  * Trainer POJO.
  * 
@@ -14,7 +16,7 @@ public class PokemonTrainer {
 	private final Team team;
 	
 	/** Trainer pokedex. **/
-	private final IPokedex pokedex;
+	private final Pokedex pokedex;
 	
 	/**
 	 * Default constructor.
@@ -23,7 +25,7 @@ public class PokemonTrainer {
 	 * @param team Trainer team.
 	 * @param pokedex Trainer pokedex.
 	 */
-	public PokemonTrainer(final String name, final Team team, final IPokedex pokedex) {
+	public PokemonTrainer(final String name, final Team team, final Pokedex pokedex) {
 		this.name = name;
 		this.team = team;
 		this.pokedex = pokedex;

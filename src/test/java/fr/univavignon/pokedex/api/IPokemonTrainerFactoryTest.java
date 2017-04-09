@@ -1,5 +1,6 @@
 package fr.univavignon.pokedex.api;
 
+import fr.univavignon.pokedex.app.Pokedex;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -28,7 +29,7 @@ public class IPokemonTrainerFactoryTest {
     public void setUp() throws PokedexException {
         MockitoAnnotations.initMocks(this);
 
-        IPokedex mockPokedex = mock(IPokedex.class);
+        Pokedex mockPokedex = mock(Pokedex.class);
 
         when(mockPokedex.size()).thenReturn(151);
 
