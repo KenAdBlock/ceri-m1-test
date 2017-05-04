@@ -38,4 +38,15 @@ public class PokemonFactoryTest {
     }
 
 
+    @Test
+    public void testcomputeIV() {
+
+        Pokemon pokemon = pokemonFactory.createPokemon(149, 3280, 149, 9000, 41);
+
+        double DELTA = 1e-2;
+
+        assertEquals(0.73, pokemon.getIv(), DELTA);
+    }
+
+
 }

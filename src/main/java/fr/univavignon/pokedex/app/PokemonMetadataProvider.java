@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import fr.univavignon.pokedex.api.IPokemonMetadataProvider;
 import fr.univavignon.pokedex.api.PokedexException;
 import fr.univavignon.pokedex.api.PokemonMetadata;
+import fr.univavignon.pokedex.tools.Curl;
 import fr.univavignon.pokedex.tools.IGSerializer;
 
 import java.io.*;
@@ -44,7 +45,8 @@ public class PokemonMetadataProvider implements IPokemonMetadataProvider, IGSeri
                 metadata = (PokemonMetadata) this.loadData(Integer.toString(index));
             } else {
                 System.out.println("Downloading metadata: " + index);
-                String content = this.curl(link);
+//                String content = this.curl(link);
+                String content = Curl.curl(link);
                 metadata = this.json2PokemonMetadata(content);
                 this.saveData(metadata);
 
@@ -55,32 +57,6 @@ public class PokemonMetadataProvider implements IPokemonMetadataProvider, IGSeri
         }
 
         return metadata;
-    }
-
-
-    /**
-     * Get metadata infos into json string from API
-     *
-     * @param link
-     * @return
-     * @throws IOException
-     */
-    private String curl(String link) throws IOException {
-
-        URL url = new URL(link);
-
-        String content = "";
-
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream(), "UTF-8"))) {
-            for (String line; (line = reader.readLine()) != null; ) {
-                content += line;
-            }
-        } catch (IOException e) {
-            e.getMessage();
-        }
-
-
-        return content;
     }
 
 
