@@ -8,7 +8,7 @@ Sujet de TP :
 
 
 # About
-Jonathan Corral
+Jonathan Corral - Kenny Coadalen
 M1 ILSEN - Alternant
 
 

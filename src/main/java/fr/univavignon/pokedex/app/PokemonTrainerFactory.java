@@ -22,6 +22,25 @@ public class PokemonTrainerFactory implements IPokemonTrainerFactory, IGSerializ
     }
 
 
+    public PokemonTrainer createTrainer(String name) {
+
+        PokemonTrainer pokemonTrainer = null;
+
+        try {
+
+            if (checkFile(path, name)) {
+                System.out.println("Loading " + name + "...");
+                pokemonTrainer = (PokemonTrainer) this.loadData(name);
+            }
+
+        } catch (Exception e) {
+            e.getMessage();
+        }
+
+
+        return pokemonTrainer;
+    }
+
     @Override
     public PokemonTrainer createTrainer(String name, Team team, IPokedexFactory pokedexFactory) {
 
