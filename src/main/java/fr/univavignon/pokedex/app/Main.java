@@ -278,7 +278,19 @@ public class Main {
 
                 for (Pokemon pokemon: pokemonTrainer.getPokedex().getPokemons()) {
 
-                    System.out.println(pokemon.getIndex() + " - " + pokemon.getName());
+                    System.out.println(
+                            pokemon.getIndex()
+                            + " - "
+                            + pokemon.getName()
+                            + " (hp: "  + pokemon.getHp() + ", "
+                            + "cp: "  + pokemon.getCp() + ", "
+                            + "dust: "  + pokemon.getDust() + ", "
+                            + "candy: "  + pokemon.getCandy() + ", "
+                            + "atk: "  + pokemon.getAttack() + ", "
+                            + "def: "  + pokemon.getDefense() + ", "
+                            + "sta: "  + pokemon.getStamina() + ", "
+                            + "iv: "  + pokemon.getIv() + ")"
+                    );
                 }
 
                 break;
