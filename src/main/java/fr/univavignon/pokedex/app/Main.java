@@ -27,14 +27,11 @@ public class Main {
 
             int userChoice = displayMainMenu();
 
-
             if(pokemonTrainer == null) {
                 displayGuestMenu(userChoice);
             } else {
                 displayLoadedTrainerMenu(userChoice);
             }
-
-
 
         }
     }
@@ -93,6 +90,35 @@ public class Main {
         return selection;
     }
 
+    private static int displayNewPokemonMenu(int statChoice) {
+        int selection;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("\nCreation of pokemon | (Step " + statChoice + "/5)");
+        System.out.println("--------------------|-----------");
+        System.out.println("0 - Quit");
+
+        switch (statChoice) {
+            case 1:
+                System.out.print("\nHis number/index (in the pokedex) : ");
+                break;
+            case 2:
+                System.out.print("\nHis HP (Health Point) : ");
+                break;
+            case 3:
+                System.out.print("\nHis CP (Combat Point) : ");
+                break;
+            case 4:
+                System.out.print("\nHis dust (Stardust) : ");
+                break;
+            case 5:
+                System.out.print("\nHis number of candy : ");
+                break;
+        }
+
+        selection = input.nextInt();
+        return selection;
+    }
 
     private static void displayGuestMenu(int userChoice) {
 
@@ -150,34 +176,92 @@ public class Main {
                 System.out.println("Wrong choice...");
         }
 
-
     }
-
 
     private static void displayLoadedTrainerMenu(int action) {
 
         switch (action) {
             case 1:
-                System.out.println("\nCreating pokemon");
-                System.out.println("---------------");
-
-
-                System.out.print("Pokemon id : ");
-                System.out.print("Pokemon cp : ");
-                System.out.print("Pokemon hp : ");
-                System.out.print("Pokemon dust : ");
-                System.out.print("Pokemon candy : ");
-
+                // Creating pokemon
                 int index = 1;
                 int hp = 1;
                 int cp = 0;
                 int dust = 0;
                 int candy = 0;
 
+                // Step 1 : Add index (in pokedex)
+                int pokemonIdChoice = displayNewPokemonMenu(1);
+
+                switch (pokemonIdChoice) {
+                    case 0:
+                        // "quit" the application
+                        appExit();
+                        break;
+                    default:
+                        // Index
+                        index = pokemonIdChoice;
+                        break;
+                }
+
+                // Step 2 : Add hp
+                int pokemonHpChoice = displayNewPokemonMenu(2);
+
+                switch (pokemonHpChoice) {
+                    case 0:
+                        // "quit" the application
+                        appExit();
+                        break;
+                    default:
+                        // Hp
+                        hp = pokemonHpChoice;
+                        break;
+                }
+
+                // Step 3 : Add cp
+                int pokemonCpChoice = displayNewPokemonMenu(3);
+
+                switch (pokemonCpChoice) {
+                    case 0:
+                        // "quit" the application
+                        appExit();
+                        break;
+                    default:
+                        // Cp
+                        cp = pokemonCpChoice;
+                        break;
+                }
+
+                // Step 4 : Add dust
+                int pokemonDustChoice = displayNewPokemonMenu(4);
+
+                switch (pokemonDustChoice) {
+                    case 0:
+                        // "quit" the application
+                        appExit();
+                        break;
+                    default:
+                        // Dust
+                        dust = pokemonDustChoice;
+                        break;
+                }
+
+                // Step 5 : Add candy
+                int pokemonCandyChoice = displayNewPokemonMenu(5);
+
+                switch (pokemonCandyChoice) {
+                    case 0:
+                        // "quit" the application
+                        appExit();
+                        break;
+                    default:
+                        // Candy
+                        candy = pokemonCandyChoice;
+                        break;
+                }
+
                 Pokemon newPokemon = pokemonTrainer.getPokedex().createPokemon(index, cp, hp, dust, candy);
 
                 pokemonTrainer.getPokedex().addPokemon(newPokemon);
-
                 save();
 
                 try {
