@@ -51,7 +51,7 @@ public class Main {
         }
 
 
-        System.out.println("9 - Quit");
+        System.out.println("0 - Quit");
 
         System.out.print("\nYour choice : ");
 
@@ -65,7 +65,7 @@ public class Main {
 
         System.out.println("\nCreation of trainer");
         System.out.println("-------------------");
-        System.out.println("9 - Quit");
+        System.out.println("0 - Quit");
 
         System.out.print("\nYour trainer name : ");
 
@@ -82,7 +82,7 @@ public class Main {
         System.out.println("1 - Team MYSTIC (blue)");
         System.out.println("2 - Team INSTINCT (yellow)");
         System.out.println("3 - Team VALOR (red)");
-        System.out.println("9 - Quit");
+        System.out.println("0 - Quit");
 
         System.out.print("\nYour team : ");
 
@@ -129,7 +129,7 @@ public class Main {
                 String trainerName = trainerNameChoice;
 
                 switch (trainerNameChoice) {
-                    case "9":
+                    case "0":
                         // "quit" the application
                         appExit();
                         break;
@@ -151,7 +151,7 @@ public class Main {
                                 case 3:
                                     teamName = Team.VALOR;
                                     break;
-                                case 9:
+                                case 0:
                                     appExit();
                                     break;
                             }
@@ -167,7 +167,7 @@ public class Main {
                 }
 
                 break;
-            case 9:
+            case 0:
                 // "quit" the application
                 appExit();
                 break;
@@ -294,7 +294,7 @@ public class Main {
                 }
 
                 break;
-            case 9:
+            case 0:
                 appExit();
                 break;
             default:
