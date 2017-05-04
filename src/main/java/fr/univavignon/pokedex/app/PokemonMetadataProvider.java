@@ -7,8 +7,10 @@ import fr.univavignon.pokedex.api.PokemonMetadata;
 import fr.univavignon.pokedex.tools.Curl;
 import fr.univavignon.pokedex.tools.IGSerializer;
 
-import java.io.*;
-import java.net.URL;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
 
 /**
  * Created by jonathan on 05/04/17.

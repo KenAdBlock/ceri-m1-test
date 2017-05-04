@@ -45,7 +45,7 @@ public class PokemonMetadataProviderTest {
     @Test(expected = PokedexException.class)
     public void testGetPokemonMetadataErrorMin() throws PokedexException {
 
-        PokemonMetadata metadata = pokemonMetadataProvider.getPokemonMetadata(0);
+        pokemonMetadataProvider.getPokemonMetadata(0);
 
     }
 
@@ -53,7 +53,7 @@ public class PokemonMetadataProviderTest {
     @Test(expected = PokedexException.class)
     public void testGetPokemonMetadataErrorMax() throws PokedexException {
 
-        PokemonMetadata metadata = pokemonMetadataProvider.getPokemonMetadata(151);
+       pokemonMetadataProvider.getPokemonMetadata(151);
 
     }
 

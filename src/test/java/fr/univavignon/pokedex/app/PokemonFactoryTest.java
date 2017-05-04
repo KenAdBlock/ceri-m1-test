@@ -35,6 +35,15 @@ public class PokemonFactoryTest {
 
         assertEquals(42, pokemon.getIndex());
 
+        assertEquals(123, pokemon.getCp());
+
+        assertEquals(97, pokemon.getHp());
+
+        assertEquals(1000, pokemon.getDust());
+
+        assertEquals(41, pokemon.getCandy());
+
+
     }
 
 
@@ -47,6 +56,8 @@ public class PokemonFactoryTest {
 
         assertEquals(0.73, pokemon.getIv(), DELTA);
     }
+
+
 
 
 }
