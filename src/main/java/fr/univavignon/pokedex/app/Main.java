@@ -16,6 +16,7 @@ public class Main {
         System.out.println("#################");
 
         int userChoice = 0;
+        Scanner input = new Scanner(System.in);
 
         userChoice = displayMainMenu();
 
@@ -37,7 +38,25 @@ public class Main {
                             PokemonTrainer pokemonTrainer = pokemonTrainerFactory.createTrainer(trainerName);
 
                             if(pokemonTrainer == null) {
-                                pokemonTrainer = pokemonTrainerFactory.createTrainer(trainerName, Team.VALOR, new PokedexFactory());
+                                int teamChoice = displayTrainerTeamMenu();
+                                Team teamName;
+
+                                switch (teamChoice) {
+                                    case 1:
+                                        teamName = Team.MYSTIC;
+                                        break;
+                                    case 2:
+                                        teamName = Team.INSTINCT;
+                                        break;
+                                    case 3:
+                                        teamName = Team.VALOR;
+                                        break;
+                                    case 9:
+                                        appExit();
+                                        break;
+                                }
+
+                                pokemonTrainer = pokemonTrainerFactory.createTrainer(trainerName, teamName, new PokedexFactory());
                             }
 
                             System.out.print("pokemonTrainer : " + pokemonTrainer);
@@ -84,6 +103,23 @@ public class Main {
         System.out.print("\nYour trainer name : ");
 
         selection = input.next();
+        return selection;
+    }
+
+    private static int displayTrainerTeamMenu() {
+        int selection;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("\nChoice the team");
+        System.out.println("----------------\n");
+        System.out.println("1 - Team MYSTIC (blue)");
+        System.out.println("2 - Team INSTINCT (yellow)");
+        System.out.println("3 - Team VALOR (red)");
+        System.out.println("9 - Quit");
+
+        System.out.print("\nYour team : ");
+
+        selection = input.nextInt();
         return selection;
     }
 
