@@ -12,9 +12,6 @@ import static org.junit.Assert.assertNotNull;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-/**
- * Created by Kenny on 29/03/2017.
- */
 public class IPokedexFactoryTest {
 
     @Rule
@@ -32,15 +29,19 @@ public class IPokedexFactoryTest {
     @Before
     public void setUp() {
         MockitoAnnotations.initMocks(this);
+
         IPokedex mockPokedex = mock(IPokedex.class);
 
-        when(pokedexFactory.createPokedex(pokemonMetadataProvider, pokemonFactory)).thenReturn(mockPokedex);
+        when(pokedexFactory.createPokedex(pokemonMetadataProvider, pokemonFactory))
+                .thenReturn(mockPokedex);
     }
 
     @Test
     public void testCreatePokedex() {
-        IPokedex pokedex = pokedexFactory.createPokedex(pokemonMetadataProvider, pokemonFactory);
+        IPokedex newPokedex = pokedexFactory.createPokedex(pokemonMetadataProvider, pokemonFactory);
 
-        assertNotNull(pokedex);
+        assertNotNull(newPokedex);
     }
+
+
 }

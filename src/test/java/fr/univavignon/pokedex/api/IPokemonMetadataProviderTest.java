@@ -1,5 +1,6 @@
 package fr.univavignon.pokedex.api;
 
+
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -12,9 +13,6 @@ import static junit.framework.TestCase.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.mockito.Mockito.when;
 
-/**
- * Created by Kenny on 05/04/2017.
- */
 public class IPokemonMetadataProviderTest {
 
     @Rule
@@ -27,22 +25,32 @@ public class IPokemonMetadataProviderTest {
     public void setUp() throws PokedexException {
         MockitoAnnotations.initMocks(this);
 
-        when(pokemonMetadataProvider.getPokemonMetadata(0)).thenReturn(new PokemonMetadata(
-            0,
-            "Bulbizarre",
-            126,
-            126,
-            90));
+        PokemonMetadata aquali = new PokemonMetadata(
+                0,
+                "Aquali",
+                512,
+                256,
+                100
+        );
+
+        when(pokemonMetadataProvider.getPokemonMetadata(0))
+                .thenReturn(aquali);
     }
 
     @Test
     public void testGetPokemonMetadata() throws PokedexException {
-        PokemonMetadata pokemonMetadata = pokemonMetadataProvider.getPokemonMetadata(0);
 
-        assertNotNull(pokemonMetadata);
-        assertEquals("Bulbizarre", pokemonMetadata.getName());
-        assertEquals(126, pokemonMetadata.getAttack());
-        assertEquals(126, pokemonMetadata.getDefense());
-        assertEquals(90, pokemonMetadata.getStamina());
+        PokemonMetadata metadata = pokemonMetadataProvider.getPokemonMetadata(0);
+
+        assertNotNull(metadata);
+
+        assertEquals("Aquali", metadata.getName());
+
+        assertEquals(512, metadata.getAttack());
+
+        assertEquals(256, metadata.getDefense());
+
+        assertEquals(100, metadata.getStamina());
     }
+
 }

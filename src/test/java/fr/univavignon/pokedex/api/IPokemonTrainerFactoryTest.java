@@ -1,5 +1,6 @@
 package fr.univavignon.pokedex.api;
 
+import fr.univavignon.pokedex.app.Pokedex;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -13,9 +14,6 @@ import static org.junit.Assert.assertNotNull;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-/**
- * Created by Kenny on 05/04/2017.
- */
 public class IPokemonTrainerFactoryTest {
 
     @Rule
@@ -30,22 +28,29 @@ public class IPokemonTrainerFactoryTest {
     @Before
     public void setUp() throws PokedexException {
         MockitoAnnotations.initMocks(this);
-        IPokedex mockPokedex = mock(IPokedex.class);
 
-        when(mockPokedex.size()).thenReturn(0);
-        when(pokemonTrainerFactory.createTrainer("Kenny", Team.VALOR, pokedexFactory)).thenReturn(new PokemonTrainer(
-            "Kenny", Team.VALOR, mockPokedex
-        ));
+        Pokedex mockPokedex = mock(Pokedex.class);
+
+        when(mockPokedex.size()).thenReturn(151);
+
+        when(pokemonTrainerFactory.createTrainer("John", Team.VALOR, pokedexFactory))
+                .thenReturn(new PokemonTrainer("John", Team.VALOR, mockPokedex));
     }
 
     @Test
     public void testCreateTrainer() {
-        PokemonTrainer pokemonTrainer = pokemonTrainerFactory.createTrainer("Kenny", Team.VALOR, pokedexFactory);
+        PokemonTrainer trainer = pokemonTrainerFactory.createTrainer("John", Team.VALOR, pokedexFactory);
 
-        assertNotNull(pokemonTrainer);
-        assertEquals("Kenny", pokemonTrainer.getName());
-        assertEquals(Team.VALOR, pokemonTrainer.getTeam());
-        assertNotNull(pokemonTrainer.getPokedex());
-        assertEquals(0, pokemonTrainer.getPokedex().size());
+        assertNotNull(trainer);
+
+        assertEquals("John", trainer.getName());
+
+        assertEquals(Team.VALOR, trainer.getTeam());
+
+        assertNotNull(trainer.getPokedex());
+
+        assertEquals(151, trainer.getPokedex().size());
     }
+
+
 }

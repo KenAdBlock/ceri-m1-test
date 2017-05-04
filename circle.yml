@@ -1,29 +1,40 @@
 ## Customize the test machine
 machine:
 
-  timezone:
-    Europe/Paris # Set the timezone
+    java:
+      version: openjdk8
 
-  java:
-    version: openjdk8
+    timezone:
+      Europe/Paris # Set the timezone
 
-
-## Customize test commands
 test:
-
   override:
-#    - mvn clean
-#    - mvn validate
-#    - mvn compile
+    - echo 'Maven full test'
+    - mvn clean
+    - mvn validate
+    - mvn compile
     - mvn test
-
+    - mvn verify
   post:
     - mvn jacoco:report
-    - mvn com.gavinmogan:codacy-maven-plugin:coverage -DcoverageReportFile=target/site/jacoco/jacoco.xml -DprojectToken=$CODACY_PROJECT_TOKEN -DapiToken=CODACY_API_TOKEN
+    - mvn com.gavinmogan:codacy-maven-plugin:coverage -DcoverageReportFile=target/site/jacoco/jacoco.xml -DprojectToken=$CODACY_PROJECT_TOKEN -DapiToken=$CODACY_API_TOKEN
 
-## Customize test branchs
 general:
-
   branches:
     only:
       - master
+
+
+
+general:
+  branches:
+    only:
+      - master
+
+
+## Customize deployment commands
+#deployment:
+#  staging:
+#    branch: master
+#    commands:
+#      - git push git@github.com:johnlejardinnier/ceri-m1-test.git
