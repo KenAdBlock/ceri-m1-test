@@ -10,36 +10,37 @@ import java.util.Scanner;
  */
 public class Main {
 
+    private static PokemonTrainer pokemonTrainer = null;
+
     public static void main(String[] args) {
         System.out.println("#################");
         System.out.println("### PokemonGo ###");
         System.out.println("#################");
 
-        int userChoice = 0;
-        Scanner input = new Scanner(System.in);
-
-        userChoice = displayMainMenu();
-
+        String trainerName = "";
         while (true){
 
-            userChoice = displayMainMenu();
+            int userChoice = displayMainMenu();
 
             switch (userChoice) {
                 case 1:
-                    // Create a trainer
-                    String trainerName = displayTrainerMenu();
+                    // Create or loaded a trainer
+                    String trainerNameChoice = displayTrainerMenu();
+                    trainerName = trainerNameChoice;
 
-                    switch (trainerName) {
+                    switch (trainerNameChoice) {
                         case "9":
+                            // "quit" the application
                             appExit();
                             break;
                         default:
+                            // Create a trainer with or without team
                             PokemonTrainerFactory pokemonTrainerFactory = new PokemonTrainerFactory();
-                            PokemonTrainer pokemonTrainer = pokemonTrainerFactory.createTrainer(trainerName);
+                            pokemonTrainer = pokemonTrainerFactory.createTrainer(trainerName);
 
                             if(pokemonTrainer == null) {
                                 int teamChoice = displayTrainerTeamMenu();
-                                Team teamName;
+                                Team teamName = Team.VALOR;
 
                                 switch (teamChoice) {
                                     case 1:
@@ -56,23 +57,23 @@ public class Main {
                                         break;
                                 }
 
+                                //System.out.print("tn:" + trainerName);
                                 pokemonTrainer = pokemonTrainerFactory.createTrainer(trainerName, teamName, new PokedexFactory());
+                                System.out.print("New trainer created : " + pokemonTrainer.getName());
                             }
 
-                            System.out.print("pokemonTrainer : " + pokemonTrainer);
-//                            System.out.println("Trainer name : " + pokemonTrainer.getName() + " !");
+                            System.out.println(pokemonTrainer.getName() + " has been loaded !");
                             break;
                     }
 
-                    System.out.println("\nTrainer " + trainerName + " has been created/loaded !");
                     break;
                 case 9:
                     // "quit" the application
                     appExit();
                     break;
-                /*default:
+                default:
                     // The user input an unexpected choice.
-                    System.out.println("Wrong choice...");*/
+                    System.out.println("Wrong choice...");
             }
         }
     }
@@ -82,7 +83,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         System.out.println("\nChoose from these choices");
-        System.out.println("-------------------------\n");
+        System.out.println("-------------------------");
         System.out.println("1 - Create or load a trainer");
         System.out.println("9 - Quit");
 
@@ -96,8 +97,8 @@ public class Main {
         String selection;
         Scanner input = new Scanner(System.in);
 
-        System.out.println("\nCreation trainer");
-        System.out.println("----------------\n");
+        System.out.println("\nCreation of trainer");
+        System.out.println("-------------------");
         System.out.println("9 - Quit");
 
         System.out.print("\nYour trainer name : ");
@@ -111,7 +112,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         System.out.println("\nChoice the team");
-        System.out.println("----------------\n");
+        System.out.println("---------------");
         System.out.println("1 - Team MYSTIC (blue)");
         System.out.println("2 - Team INSTINCT (yellow)");
         System.out.println("3 - Team VALOR (red)");
@@ -124,7 +125,13 @@ public class Main {
     }
 
     private static void appExit() {
-        System.out.println("Good by trainer ! :)");
+        String trainerName = "guest";
+
+        if(pokemonTrainer != null) {
+            trainerName = pokemonTrainer.getName();
+        }
+
+        System.out.println("Good bye " + trainerName + " ! :)");
         System.exit(0);
     }
 }
