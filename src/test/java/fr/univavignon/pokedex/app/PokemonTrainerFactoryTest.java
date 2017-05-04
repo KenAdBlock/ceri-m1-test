@@ -34,6 +34,15 @@ public class PokemonTrainerFactoryTest {
 
     }
 
+
+    @Test
+    public void testGetTrainer() {
+
+        PokemonTrainer pokemonTrainer = pokemonTrainerFactory.createTrainer("John");
+
+        assertNotNull(pokemonTrainer);
+    }
+
     @Test
     public void testCreateTrainer() {
 

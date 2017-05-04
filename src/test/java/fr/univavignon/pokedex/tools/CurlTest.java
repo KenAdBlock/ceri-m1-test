@@ -8,7 +8,6 @@ import org.mockito.junit.MockitoRule;
 import java.io.IOException;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 
 /**
  * Created by jonathan on 09/04/17.
